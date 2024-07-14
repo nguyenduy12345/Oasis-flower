@@ -13,7 +13,7 @@ const Cakes = lazy(() => import('./pages/Cakes'))
 const Flowers = lazy(() => import('./pages/Flowers'))
 const Home = lazy(() => import('./pages/Home'))
 const Register = lazy(() => import('./pages/Register'))
-// const ErrorPage = lazy(() => import('/src/pages/ErrorPage'))
+const ErrorPage = lazy(() => import('/src/pages/ErrorPage'))
 const Occasions = lazy(() => import('./pages/Occasions'))
 const Profile = lazy(() => import('./pages/Profile'))
 
@@ -45,7 +45,7 @@ function App() {
           <Route path='/occasions' element={<Occasions />} />
           <Route path='/register' element={<Register />} />
           <Route path='/profile' element={<Profile />} />
-          {/* <Route path='*' element={<ErrorPage />} /> */}
+          <Route path='*' element={<ErrorPage />} />
         </Routes>
       <Footer />
       <Contact />
